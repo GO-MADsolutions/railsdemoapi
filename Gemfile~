@@ -8,8 +8,15 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
-gem 'sqlite3'
+group :production do
+ gem 'pg'
+end
 
+group :development do
+gem 'sqlite3'
+end
+
+gem 'rails_12factor', group: :production
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'active_model_serializers'
