@@ -1,0 +1,29 @@
+class API::V1::StallsController < ApplicationController
+  before_action :set_content, only: [:show, :update, :destroy]
+
+  def index
+  
+   @stalls = Stall.all
+   respond_to do |format|
+    format.xml { render xml: @stalls }
+  end
+
+  end
+  
+  def show 
+  end
+
+  def new 
+  end 
+
+  def delete
+  end
+  
+  def create 
+  end
+
+  def update
+  end
+
+  
+end
