@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     
-   root :to "api/v1/stalls#index"
+   root 'api/v1/stalls#index'
    resources:staller
   
     namespace :api, :defaults => {:format => :json} do
