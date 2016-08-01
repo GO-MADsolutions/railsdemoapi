@@ -10,6 +10,7 @@ Rails.application.routes.draw do
             get "/stalls/:id", to: "stalls#show"
             put  "/stalls/:id", to: "stalls#update"
             delete "/stalls/:id", to: "stalls#destroy"
+	    #get "/stalls", to "stalls#findbyname"
 end
 end
   # The priority is based upon order of creation: first created -> highest priority.
