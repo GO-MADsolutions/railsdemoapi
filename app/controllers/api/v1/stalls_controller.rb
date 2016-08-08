@@ -8,7 +8,7 @@ class API::V1::StallsController < ApplicationController
    
    @stalls = @stalls.searchname(params[:name]) if params[:name]
    @stalls = @stalls.searchplace(params[:place]) if params[:place]
-   #@stalls = @stalls.search(params[:place]) if params[:place]
+   
    # @stalls = @stalls.where(:name => name) if name.value.present?
    render json: @stalls
 
